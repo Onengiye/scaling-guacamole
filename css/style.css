@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&family=Lato:wght@300;400&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
 *,
 *::before,
 *::after {
@@ -11,11 +10,11 @@
 }
 body{
     background-color: #fff;
-    margin: 0 auto;
+    margin: 0 a                               uto;
 }
 #container{
     margin: 0 auto;
-    max-width: 1329px;
+    max-width: 100%;
 }
 
 /* Banner */
@@ -42,6 +41,7 @@ body{
     font-size: 5em;
     font-family: 'EB Garamond', serif;
     padding: 20px 60px 0;
+    text-align: center;
 }
 #banner-text p{
     background-color: #fff;
@@ -54,7 +54,13 @@ body{
 
 #about-text {
     height: 528px;
-    padding: 86px 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about-text div{
+    width: 80%;
 }
 #about-text h5{
     color: #fff;
@@ -71,7 +77,17 @@ body{
     line-height: 1.5em;
     font-family: 'Lato', sans-serif;
 }
+#signature{
+    display: block;
+    padding: 25px 0;
+    font-family: 'Dancing Script', cursive;
+    color: #DFABB9;
+    font-size: 1.5em;
+}
 
+/* 
+    Gallery 
+*/
 #gallery-box {
 
     display: flex;
@@ -84,16 +100,50 @@ body{
 
 .gaalley-image {
     width: 33.3%;
-    height: 490px;
+    height: 489px;
 }
+ 
+/* CONTACT */
 
 #contact {
     height: 356px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+#contact h3{
+    font-size: 3em;
+    font-family: 'EB Garamond', serif;
+}
+#contact p{
+    font-family: 'Lato', sans-serif;
+}
+.input-white{
+    width: 250px;
+    height: 45px;
+    padding: 20px;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+}
+.input-black{
+    width: 165px;
+    padding: 0;
+    background-color: #001;
+    color: #f9f9f9;
+}
+
+
+
+/* POST */
 
 #post {
     height: 640px;
-    padding: 56px 140px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .article-iamge {
@@ -103,26 +153,32 @@ body{
 
 article {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 article p {
-    font-size: 1.1em;
+    font-size: 1em;
+    padding:1.5em;
     width: 602px;
     font-family: 'Lato', sans-serif;
     text-align: justify;
-    line-height: 24px;
+    line-height: 22px;
 }
 
 #collection {
     height: 670px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
 }
 
 #collection h2 {
     text-align: center;
-    padding: 56px 0 21px;
     font-size: 5em;
     color: #fff;
     font-family: 'EB Garamond', serif;
@@ -130,8 +186,8 @@ article p {
     font-style: italic;
 }
 
+
 #slide {
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -143,9 +199,9 @@ article p {
     height: 344px;
     width: 252px;
 }
-a img{
-    padding-top: 34px;
-}
+
+    /* PRODUCT */
+    
 #product{
     padding: 82px 168px;;
     display: flex;
@@ -158,19 +214,82 @@ a img{
     width: 30%;
     height: 330px;
 }
+
+#cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Lato', sans-serif;
+    color: #1C1C1C;
+}
+#cart h6{
+    font-weight: 400;
+    font-size: 2em;
+}
+#cart span{
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+
+
+
 #subscribe{
     display: flex;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
 }
 .subscribe-image{
     height: 620px;
-    width: 50%;
+    width: 48%;
 }
 #line{
+    margin: 0 auto;
     height: 12px;
     width: 80%;
     background-color: #D9B1B3;
 }
+#subscribe-form-display{
+    text-align: center;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+}
+#subscribe-form-display h4{
+    color: #111111;
+    font-size: 5em;
+    font-family: 'EB Garamond', serif;
+}
+.sub-input {
+    width: 45%;
+    height: 45px;
+    padding: 20px;
+    border: 1px solid #1111;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+}
+.sub-button{
+    background: #111;
+    width: 120px;
+    height: 45px;
+    color: #f9f9f9;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 25px;
+    margin: 15px;
 
+}
+#subscribe-form-display p{
+    width: 50%;
+    margin: 0 auto;
+}
+#social-links{
+    display: flex;
+    justify-content: center;
+}
 
 .light-purple {
     background-color: #D9B1B3;
